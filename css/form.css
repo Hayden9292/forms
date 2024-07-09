@@ -14,8 +14,52 @@ div#formcol1 {
 	width: 100%;
 }
 
+label {
+	margin-right: .3em;
+	width: 6.0em;  /* I made this deliberately wide – come up with your own optimal width */
+	display: inline-block; /* width will not work for “inline” elements such as “label”. Therefore we need to set it to “inline-block” */
+  text-align: left;
+}
+
+#formcol1 li {   
+	list-style:none;
+}
+
+p, li {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #2a2a2a;
+}
+
+
+
+em{
+  color: maroon;
+  font-size: 10pt;  
+}
+
+h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  text-align: center;
+}
+
+legend{
+  font-size: 18pt
+}
+
+input{
+  background:#f2f2f2;
+  border:1px solid black;
+}
+
+
+select:focus, select:active, input:focus, input:active, input:focus + label, input:active + label, label[for]:focus, label[for]:active {
+color: #FFF !important;
+background-color: #BB3D2F !important;}
+
+#formcol1 input.reqfield {
+	background:#FF9;
+}
 
 
 /* end of form css */
-
-
+	
